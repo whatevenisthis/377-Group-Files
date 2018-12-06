@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<title>Salary DB</title>
+<h1>Salary database for iSchool undergrads</h1>
+<pre>Please select a position from the dropdown below to see a summary and details.
+</pre>
+
+<script>
+function validateForm() {
+ return true;
+}
+</script>
+
+</head>
+<body>
+
+  <form name="myForm" action="sentence.php" method="post" onsubmit="return validateForm()">
+    <select name="Job" size="1">
+      <option value="Application Developer">Application Developer</option>
+      <option value="Bioinformatician">Bioinformatician</option>
+      <option value="Clinical Information Specialist">Clinical Information Specialist</option>
+      <option value="Competitive Intelligence Manager">Competitive Intelligence Manager</option>
+      <option value="Database Administrator">Database Administrator</option>
+      <option value="Data Analyst">Data Analyst</option>
+      <option value="Data Scientist">Data Scientist</option>
+      <option value="Health Informatics Manager">Health Informatics Manager</option>
+      <option value="Informatics Nurse">Informatics Nurse</option>
+      <option value="Information Architect">Information Architect</option>
+      <option value="Intelligence Analyst">Intelligence Analyst</option>
+      <option value="IT Analyst">IT Analyst</option>
+      <option value="IT Director">IT Director</option>
+      <option value="Knowledge Manager">Knowledge Manager</option>
+      <option value="Network Administrator">Network Administrator</option>
+      <option value="Records Manager">Records Manager</option>
+      <option value="Security Specialist">Security Specialist</option>
+      <option value="Software Engineer">Software Engineer</option>
+      <option value="Systems Analyst">Systems Analyst</option>
+      <option value="Software Engineer">Software Engineer</option>
+      <option value="Web Content Manager">Web Content Manager</option>
+      <option value="Web Developer">Web Developer</option>
+    </select>
+    <button type="submit" name="submit">Submit</button>
+  </form>
+
+
+</body>
+</html>
