@@ -35,7 +35,7 @@ if(isset($_POST['submit'])) {
 
 
   echo $job, "'s make on average $", $avg, " a year. The minimum is $", $min, " and the maximum is $", $max, ".";
-echo nl2br("\n\nThe following table shows details about people with this title. \n\n");
+  echo nl2br("\n\nThe following table shows details about people with this title. \n\n");
 
 
   $table = "SELECT salary AS 'Salary', degree_level AS 'Education Level', experience AS 'Years of Experience' from mydb.Instances INNER JOIN mydb.Jobs on mydb.Instances.job_id = mydb.Jobs.job_id INNER JOIN Degree on mydb.Instances.degree_id = mydb.Degree.degree_id WHERE job_title='$job' ORDER BY salary";
